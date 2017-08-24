@@ -7,6 +7,6 @@ class ApplicationController < ActionController::Base
 
   def redirect_subdomain
     return unless request.host == 'www.carlgrafmuller.com'
-    redirect_to 'https://carlgrafmuller.com' + request.fullpath, status: 301
+    redirect_to 'http://carlgrafmuller.com' + request.fullpath, status: 301
   end
 end
