@@ -41,6 +41,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# D3 Data Visualization
+gem 'd3-rails', '~> 4.10'
+
 # Ads vendor prefixes to css in rails
 gem 'autoprefixer-rails', '~> 7.1', '>= 7.1.1'
 
