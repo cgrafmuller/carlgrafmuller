@@ -1,0 +1,14 @@
+// List of things that can be overriden: http://getbootstrap.com/customize/#colors
+// E.g $body-bg: red;
+
+
+//========================
+//====   Nav Bar ======
+//========================
+$navbar-height: 60px;
+$navbar-padding-vertical: 10px;
+$navbar-padding: 10px;
+$navbar-line-height: $navbar-height - ($navbar-padding-vertical*2);
+$navbar-default-bg: white;
+$navbar-border-radius: 0px;
+$navbar-default-link-color: #34495e;

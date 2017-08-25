@@ -1,0 +1,262 @@
+div.home-wrapper {
+  section {
+    width: 100%;
+    position: relative;
+    padding: $medium-spacing 0;
+    text-align: center;
+
+    h2 {
+      font-size: 4.5rem;
+    }
+
+    @media only screen and (max-width: $xs-max-width) { // xs
+      h2 {
+        font-size: 3.5rem;
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+
+  section.how-it-works {
+    height: 97vh;
+    min-height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media only screen and (max-width: $sm-max-width){ /* xs and sm */
+    section.hero, section.how-it-works {
+      height: auto;
+    }
+  }
+
+  section.hero {
+    height: 97vh;
+    max-height: 700px;
+    color: white;
+    text-align: center;
+    background-image: image_url('street-vendor-selling-paintings-1920-1080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: $navbar-height + 125px;
+    padding-bottom: $navbar-height + 125px;
+    margin-top: ($navbar-height * -1);
+
+    div.above-overlay.h1-wrapper{
+      z-index: 1005; /* put it above the down caret */
+    }
+
+    .black-overlay{
+      opacity: 0.8;
+    }
+    h1{
+      color: white;
+      font-size: 5rem;
+      strong{
+        font-size: 6rem;
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+
+    @media only screen and (max-width: $xs-max-width) { // xs
+      h1,
+      h1 strong {
+        font-size: 3.5rem;
+      }
+
+      h3{
+        font-size: 2.5rem;
+      }
+    }
+
+    div.city-search{
+      .btn, input {
+        height: 50px;
+      }
+
+      .btn {
+        min-width: 100px;
+        border-radius: 0 4px 4px 0;
+      }
+
+      input.city-autocomplete {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+      }
+
+      input.city-autocomplete-service {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+      }
+    }
+
+    div.icon-wrapper{
+      position: absolute;
+      bottom: $medium-spacing;
+      text-align: center;
+      color: white;
+      width: 100%;
+      font-size: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: $xs-max-width){ /* xs */
+    section.hero, section.popular-cities{
+      div.city-search{
+        display: block;
+        width: 100%;
+        .btn, input{
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+
+        input.city-autocomplete {
+          border-bottom-left-radius: 0;
+          border-top-right-radius: 4px;
+        }
+
+        input.city-autocomplete-service {
+          border-bottom-left-radius: 0;
+          border-top-right-radius: 4px;
+        }
+
+        .btn{
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px;
+          border-top-right-radius: 0px;
+          border-top-left-radius: 0px;
+          margin-left: 0px;
+        }
+      }
+    }
+
+    section.hero {
+      padding-top: $navbar-height + 50px;
+      padding-bottom: $navbar-height + 50px;
+    }
+
+    section.popular-cities {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+
+  section.how-it-works{
+    padding-top: 6vh;
+    background-image: image_url('paris-neighborhoods-1920-1080.jpg');
+    background-position-y: 25px;
+    color: $dark-blue-text;
+
+    div.flow{
+      i.fa{
+        color: $primary-color;
+        font-size: 4.5rem;
+      }
+
+      div.step, div.arrow{
+        margin-right: $small-spacing;
+
+
+        @media only screen and (max-width: $xs-max-width){ /* xs */
+          .visible-xs{
+            display: inline-block !important;
+          }
+        }
+        &:last-child{
+          margin-right: 0px;
+        }
+      }
+
+      div.step{
+        width: 140px;
+      }
+
+      div.arrow{
+        vertical-align: top;
+        margin-top: $small-spacing;
+        i.fa{
+          color: $dark-blue-text;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $sm-min-width) and (max-width: $sm-max-width){ /* sm */
+    section.how-it-works{
+      padding-bottom: 500px;
+      background-position-x: -120px;
+    }
+  }
+  @media only screen and (max-width: $xs-max-width){ /* xs */
+
+    section.hero{
+      background-image: image_url('street-vendor-selling-paintings-737-522.jpg');
+    }
+
+    section.how-it-works{
+      padding-bottom: 400px;
+      background-position:center;
+      background-position-y: 100px;
+      background-image: image_url('paris-neighborhoods-767-1080.jpg');
+
+      div.flow{
+        div.step, div.arrow{
+          margin-right: 0px;
+          display: block;
+          text-align: center;
+          width: 100%;
+          margin-bottom: $medium-spacing;
+        }
+      }
+    }
+  }
+
+  section.popular-cities {
+    .black-overlay{
+      opacity: 0.08;
+    }
+
+    div.city-search{
+      .btn, input {
+        height: 50px;
+      }
+
+      .btn {
+        min-width: 100px;
+        border-radius: 0 4px 4px 0;
+      }
+
+      input.city-autocomplete {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+      }
+
+      input.city-autocomplete-service {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+      }
+    }
+  }
+
+  section.legacy{
+
+    a.tool-wrapper{
+      display: block;
+      color: $dark-blue-text;
+
+      img{
+        width: 100%;
+        border: 1px solid lightgray;
+      }
+      p{
+        margin-bottom: 0px;
+        font-size: 2rem;
+      }
+    }
+  }
+}

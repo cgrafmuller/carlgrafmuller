@@ -1,0 +1,395 @@
+  //Typography
+.accent-font {
+  font-family: "Merriweather", Georgia, serif;
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.white-on-image {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+.responsive {
+  max-width: 100%;
+}
+
+.black-overlay{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+87 */
+  background: #7d7e7d; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #7d7e7d 0%, #0e0e0e 87%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  #7d7e7d 0%,#0e0e0e 87%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  #7d7e7d 0%,#0e0e0e 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  opacity: 0.5;
+  height: 100%;
+  width:100%;
+  position:absolute;
+  left: 0;
+  top:0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.above-overlay{
+  z-index: 1001;
+  position:relative;
+}
+
+.link-style{
+  color: $primary-color;
+  cursor: pointer;
+  &:hover, &:focus{
+    text-decoration: underline;
+  }
+}
+
+// Positioning
+.relative{
+  position: relative;
+}
+
+
+.waiting {
+  cursor:wait !important;
+}
+
+table.valign-middle > tbody > tr > td,
+table.valign-middle > tbody > tr > th, {
+  vertical-align: middle;
+}
+
+//Images
+img.desaturate {
+  filter: grayscale(100%);
+}
+
+//Buttons
+.btn-sexy {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.btn {
+  transition: $quick-transition;
+  border: none;
+  color: white;
+  &:focus, &:active {
+    outline: none;
+    color: white;
+  }
+
+  &:hover {
+    color: white;
+  }
+
+  &.locked{
+    cursor: not-allowed;
+  }
+}
+
+a.btn{
+  text-decoration: none;
+}
+
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+
+/* I hate to use !important, but fuck!
+  bootstrap override is not working */
+.btn-inverse-primary {
+  @include button-variant($primary-color, white, $primary-color);
+  border: 1px solid $primary-color !important;
+
+  &:hover {
+    background-color: $primary-color !important;
+    color: white !important;
+  }
+}
+
+.btn-inverse-primary:focus{
+  background-color: white !important;
+  border: 1px solid $primary-color !important;
+  color: $primary-color !important;
+}
+.btn-inverse-primary.active,
+.btn-inverse-primary:active,
+.btn-inverse-primary.active:active,
+.btn-inverse-primary.active:focus,
+.btn-inverse-primary.active:hover{
+  background-color: $primary-color !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+
+
+.btn-secondary {
+  @include button-variant(white, $dark-blue-text, $dark-blue-text);
+}
+
+.btn-inverse-secondary {
+  @include button-variant($dark-blue-text, white, $dark-blue-text);
+  border: 1px solid;
+
+  &:hover, &:focus:hover {
+    background-color: $dark-blue-text;
+    color: white;
+  }
+
+  &:focus{
+    background-color: initial;
+    color: initial;
+  }
+}
+
+
+.btn-inverse-secondary.active,
+.btn-inverse-secondary:active,
+.btn-inverse-secondary.active:active,
+.btn-inverse-secondary.active:focus,
+.btn-inverse-secondary.active:hover{
+  background-color: $dark-blue-text !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+
+.btn-rounded {
+  border-radius: 25px;
+}
+
+// Common styles
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger,
+.btn-dark,
+.btn-transparent,
+.btn-primary-outline-only {
+  text-shadow: none;
+  @include box-shadow(none);
+  padding: 0.75rem;
+
+  // Reset the shadow
+  &:active,
+  &.active {
+    @include box-shadow(none);
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    @include box-shadow(none);
+    background-color: lighten($gray, 25%);
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .badge {
+    text-shadow: none;
+  }
+}
+
+//Positioning
+.full-width {
+  width: 100%;
+}
+.full-height{
+  height: 100%;
+}
+.inline-block {
+  display: inline-block;
+}
+.inline {
+  display:inline;
+}
+.block {
+  display:block;
+}
+
+.list-no-bullet{
+  padding-left: 0;
+  list-style: none;
+}
+
+.v-top{
+  vertical-align: top;
+}
+
+@media only screen and (max-width: $xs-max-width){ /* xs */
+  .block-xs {
+    display:block;
+  }
+
+  .no-float-xs {
+    float:none !important;
+  }
+}
+
+//Spacing
+.no-padding {
+  padding:0px;
+}
+.no-padding-left {
+  padding-left:0px;
+}
+.no-padding-right {
+  padding-right:0px;
+}
+
+.padding-top {
+  padding-top: $medium-spacing;
+}
+
+.no-margin {
+  margin:0px;
+}
+.padding-md{
+  padding: $medium-spacing;
+}
+.padding-sm{
+  padding: $small-spacing;
+}
+
+.margin-top-sm {
+  margin-top: $small-spacing;
+}
+.margin-top-md {
+  margin-top: $medium-spacing;
+}
+.margin-top-lg {
+  margin-top: $large-spacing;
+}
+.margin-bottom-sm {
+  margin-bottom: $small-spacing;
+}
+.margin-bottom-md {
+  margin-bottom: $medium-spacing;
+}
+@media only screen and (max-width: $xs-max-width) { /* xs */
+  .margin-bottom-md-xs {
+    margin-bottom: $medium-spacing;
+  }
+}
+.margin-bottom-lg {
+  margin-bottom: $large-spacing;
+}
+.margin-left-sm {
+  margin-left: $small-spacing;
+}
+.margin-left-md {
+  margin-left: $medium-spacing;
+}
+.margin-left-lg {
+  margin-left: $large-spacing;
+}
+.margin-right-xs {
+  margin-right: $extra-small-spacing;
+}
+.margin-right-sm {
+  margin-right: $small-spacing;
+}
+.margin-right-md {
+  margin-right: $medium-spacing;
+}
+.margin-right-lg {
+  margin-right: $large-spacing;
+}
+
+.padding-top-sm {
+  padding-top: $small-spacing;
+}
+.padding-top-md {
+  padding-top: $medium-spacing;
+}
+.padding-top-lg {
+  padding-top: $large-spacing;
+}
+.padding-left-sm {
+  padding-left: $small-spacing;
+}
+.padding-left-md {
+  padding-left: $medium-spacing;
+}
+.padding-left-lg {
+  padding-left: $large-spacing;
+}
+.padding-right-sm {
+  padding-right: $small-spacing;
+}
+.padding-right-md {
+  padding-right: $medium-spacing;
+}
+.padding-right-lg {
+  padding-right: $large-spacing;
+}
+.padding-bottom-sm {
+  padding-bottom: $small-spacing;
+}
+.padding-bottom-md {
+  padding-bottom: $medium-spacing;
+}
+.padding-bottom-lg {
+  padding-bottom: $large-spacing;
+}
+
+// Borders
+.border-bottom {
+  border-bottom: 1px solid lightgray;
+}
+.border-top {
+  border-top: 1px solid lightgray;
+}
+.border-left {
+  border-left: 1px solid lightgray;
+}
+.border-right {
+  border-right: 1px solid lightgray;
+}
+
+// Elements
+.list-no-bullet {
+  padding-left: 0;
+  list-style: none;
+}
+
+@media (min-width: $sm-min-width) and (max-width: $sm-max-width){ // sm
+  .hidden-sm {
+    display: none;
+  }
+}
+
+
+
+// Animation
+.animated {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.animated-slow {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.animated-fast {
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}

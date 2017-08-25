@@ -1,0 +1,63 @@
+/**
+ * Basic typography style for copy text
+ */
+
+.ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.image-text{
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.image-caption {
+  color: $gray;
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+h2.primary-underline,
+h3.primary-underline,
+h4.primary-underline{
+    text-align: center;
+    color: $primary-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    .helper{
+      width: 75px;
+      height: 1px;
+      padding-top: 15px;
+      display: block;
+      margin: auto;
+    }
+}
+
+h2.primary-underline,
+h3.primary-underline {
+  font-size: 4rem;
+  margin-top: 20px;
+  margin-bottom: 25px;
+
+  .helper {
+    border-bottom: 4px solid $primary-color;
+  }
+}
+
+h4.primary-underline {
+  font-size: 3.3rem;
+  margin-top: $medium-spacing;
+  text-align: left;
+  margin-bottom: $medium-spacing;
+  .helper {
+    border-bottom: 2px solid $primary-color;
+  }
+}
+
+

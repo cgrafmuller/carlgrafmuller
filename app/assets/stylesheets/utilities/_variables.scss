@@ -1,0 +1,93 @@
+// 1. Primary colors
+$primary-color:         #20c190;   // Brand green color
+$gray-dark:             #383838;   // Darkest gray used for footer
+$gray-light:            #b8b8b8;   // Light regular color used for text
+$gray:                  #737373;   // Text gray
+$dark-blue-text:        #34495e;   // Dark blue used for text
+$secondary-color:       #5bc0de;   // Blue color
+$warning-color:         #f0ad4e;
+$success-color:         #62ba4e;
+$info-color:            #5bc0de;
+$danger-color:          #e32f5e;
+
+// 2. Element Colors
+$border-color: #e7e7e7;
+$text-color:            $gray;
+$text-color-light:      $gray-light;
+$btn-primary-color:     #fff;
+$btn-primary-bg:        $primary-color;
+$btn-primary-border:    darken($btn-primary-bg, 5%);
+
+// 2.5 Ratings colors
+$excellent:             #0F8140; // Dark Green
+$great:                 #72ac2f; // Light Green
+$good:                  #FFB308; // Yellow
+$okay:                  #F8991C; // Yellow
+$mediocre:              #F8991C; // Dark Yellow
+$no-rating:             #888888; // Gray
+
+// 3. Font sizes
+
+$extra-small-text:      .65em;
+$small-text:            .85em;
+$base-text:             1em;
+$large-text:            1.2em;
+$big-text:              1.5em;
+$extra-big-text:        2em;
+$yuge-text:             3em;
+
+
+// 4. Spacing
+
+$extra-small-spacing:   .5rem;
+$small-spacing:         1rem;
+$small-plus-spacing:    1.5rem;
+$medium-spacing:        2.5rem;
+$large-spacing:         5rem;
+$big-spacing:           10rem;
+
+
+// 5. Animations
+$quick-transition:      all .2s ease;
+
+
+// 6. Alerts
+
+
+$state-success-text:             $success-color;
+$state-success-bg:               $success-color;
+$state-success-border:           darken(adjust-hue($state-success-bg, -5), 8%);
+
+$state-info-text:                $info-color;
+$state-info-bg:                  $info-color;
+$state-info-border:              darken(adjust-hue($state-info-bg, 5), 8%);
+
+$state-warning-text:             $warning-color;
+$state-warning-bg:               $warning-color;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -5), 5%);
+
+$state-danger-text:              $danger-color;
+$state-danger-bg:                $danger-color;
+$state-danger-border:            darken(adjust-hue($state-danger-bg, 5), 8%);
+
+
+//## Define alert colors, border radius, and padding.
+$alert-padding:               15px;
+$alert-border-radius:         $border-radius-base;
+$alert-link-font-weight:      bold;
+
+$alert-success-bg:            $state-success-bg;
+$alert-success-text:          $state-success-text;
+$alert-success-border:        $state-success-border;
+
+$alert-info-bg:               $state-info-bg;
+$alert-info-text:             $state-info-text;
+$alert-info-border:           $state-info-border;
+
+$alert-warning-bg:            $state-warning-bg;
+$alert-warning-text:          $state-warning-text;
+$alert-warning-border:        $state-warning-border;
+
+$alert-danger-bg:             $state-danger-bg;
+$alert-danger-text:           $state-danger-text;
+$alert-danger-border:         $state-danger-border;

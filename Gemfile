@@ -44,8 +44,11 @@ gem 'jbuilder', '~> 2.5'
 # D3 Data Visualization
 gem 'd3-rails', '~> 4.10'
 
-# Ads vendor prefixes to css in rails
+# Adds vendor prefixes to css in rails
 gem 'autoprefixer-rails', '~> 7.1', '>= 7.1.1'
+
+# Font-awesome
+gem 'font-awesome-sass', '~> 4.7'
 
 group :production do
   # Heroku Compression

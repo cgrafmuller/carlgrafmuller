@@ -14,6 +14,38 @@
 
 @charset 'UTF-8';
 
+//List of variables to be overriden here: http://getbootstrap.com/customize/#colors
+@import 'base/bootstrap-override';
+
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+// 1. Configuration and helpers
+@import
+'utilities/functions',
+'utilities/variables';
+
+// 2. Vendors
+
+// 3. Base stuff
+@import
+'base/base',
+'base/fonts',
+'base/helpers',
+'base/gradient',
+'base/typography';
+
+// 4. Layout-related sections
+
+// 5. Components
+
+// 6. Page-specific styles
+@import
+'pages/home';
+
+// 7. Themes
+
+//8. Vendor shit
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
