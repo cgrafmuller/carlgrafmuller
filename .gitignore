@@ -43,5 +43,5 @@ bower.json
 # Ignore Byebug command history file.
 .byebug_history
 
-/public/packs
+# Ignore all JS-dependencies
 /node_modules
