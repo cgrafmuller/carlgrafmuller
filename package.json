@@ -1,7 +1,5 @@
 {
   "name": "carlgrafmuller",
   "private": true,
-  "dependencies": {
-    "d3": "^4.10.0"
-  }
+  "dependencies": {}
 }
