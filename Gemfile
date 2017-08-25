@@ -17,6 +17,8 @@ gem 'puma', '~> 3.7'
 gem 'puma_worker_killer', '~> 0.1.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+# Bootstrap 3: https://github.com/twbs/bootstrap-sass#a-ruby-on-rails
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -39,12 +41,21 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Ads vendor prefixes to css in rails
+gem 'autoprefixer-rails', '~> 7.1', '>= 7.1.1'
+
+group :production do
+  # Heroku Compression
+  gem 'heroku-deflater', '~> 0.6.3'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rubocop', '~> 0.49.0', require: false
 end
 
 group :development do
