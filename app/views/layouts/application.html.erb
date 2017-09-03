@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Carlgrafmuller</title>
+    <meta charset="utf-8">
+    <!-- Scale for Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title><%= @page_title.presence || "Carl Grafmuller" %></title>
+    <meta name="description" content="<%= @meta_description.presence || "Personal website of Carl Grafmuller. Entrepreneur, actuary, data scientist, full-stack developer, musician, artifical intelligence researcher." %>">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="canonical" href="<%= @canonical_url %>" />
+
   </head>
 
   <body>
