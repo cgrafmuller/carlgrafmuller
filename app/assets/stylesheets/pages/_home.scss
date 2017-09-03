@@ -1,9 +1,10 @@
-div.home-wrapper {
+.home-wrapper {
   section {
     width: 100%;
     position: relative;
     padding: $medium-spacing 0;
     text-align: center;
+    height: 100vh;
 
     h2 {
       font-size: 4.5rem;
@@ -20,6 +21,25 @@ div.home-wrapper {
     }
   }
 
+  .card-one {
+    z-index: 3;
+    background-color: blue;
+  }
+
+  .card-two {
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+    background-color: red;
+  }
+
+  .card-three {
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    background-color: green;
+  }
+
   section.how-it-works {
     height: 97vh;
     min-height: 700px;
@@ -28,22 +48,19 @@ div.home-wrapper {
   }
 
   @media only screen and (max-width: $sm-max-width){ /* xs and sm */
-    section.hero, section.how-it-works {
+    section.card, section.how-it-works {
       height: auto;
     }
   }
 
-  section.hero {
-    height: 97vh;
-    max-height: 700px;
-    color: white;
+  .card {
+    height: 100vh;
     text-align: center;
     // background-image: image_url('street-vendor-selling-paintings-1920-1080.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: $navbar-height + 125px;
     padding-bottom: $navbar-height + 125px;
-    margin-top: ($navbar-height * -1);
 
     div.above-overlay.h1-wrapper{
       z-index: 1005; /* put it above the down caret */
@@ -105,7 +122,7 @@ div.home-wrapper {
   }
 
   @media only screen and (max-width: $xs-max-width){ /* xs */
-    section.hero, section.popular-cities{
+    section.card, section.popular-cities{
       div.city-search{
         display: block;
         width: 100%;
@@ -135,7 +152,7 @@ div.home-wrapper {
       }
     }
 
-    section.hero {
+    section.card {
       padding-top: $navbar-height + 50px;
       padding-bottom: $navbar-height + 50px;
     }
@@ -146,7 +163,7 @@ div.home-wrapper {
     }
   }
 
-  section.how-it-works{
+  section.how-it-works {
     padding-top: 6vh;
     background-image: image_url('paris-neighborhoods-1920-1080.jpg');
     background-position-y: 25px;
@@ -194,7 +211,7 @@ div.home-wrapper {
   }
   @media only screen and (max-width: $xs-max-width){ /* xs */
 
-    section.hero{
+    section.card{
       background-image: image_url('street-vendor-selling-paintings-737-522.jpg');
     }
 
