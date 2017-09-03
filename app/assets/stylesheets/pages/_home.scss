@@ -2,21 +2,18 @@
   .card-one {
     position: relative;
     z-index: 3;
-    background-color: blue;
   }
 
   .card-two {
     position: sticky;
     bottom: 0;
     z-index: 2;
-    background-color: red;
   }
 
   .card-three {
     position: sticky;
     bottom: 0;
     z-index: 1;
-    background-color: green;
   }
 
   .card {
