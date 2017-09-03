@@ -48,6 +48,7 @@ Style/FrozenStringLiteralComment:
     - 'bin/*'
     - 'Rakefile'
     - 'config.ru'
+    - 'Gemfile'
 Style/LineEndConcatenation:
   Enabled: false
 Style/NumericLiterals:
