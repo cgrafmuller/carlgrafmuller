@@ -2,6 +2,9 @@
   .card-one {
     position: relative;
     z-index: 3;
+    background-image: image_url('thumbs_up.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .card-two {
@@ -16,12 +19,23 @@
     z-index: 1;
   }
 
+  .left {
+    width: 50vw;
+    float: left;
+  }
+
+  .right {
+    width: 50vw;
+    float: right;
+  }
+
   .card {
     width: 100vw;
     height: 100vh;
     text-align: center;
     padding-top: $navbar-height + 125px;
     padding-bottom: $navbar-height + 125px;
+    color: #fff;
 
     h1 {
       color: #fff;
