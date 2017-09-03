@@ -1,4 +1,27 @@
 .home-wrapper {
+  .card-one {
+    position: relative;
+    z-index: 3;
+    background-image: image_url('thumbs_up.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-two {
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .card-three {
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    height: 100% !important;
+    padding-top: 200vh !important;
+    margin-top: $navbar-height + 125px;
+  }
+
   .left {
     width: 50vw;
     float: left;
@@ -21,29 +44,6 @@
     padding-top: 135px;
     padding-bottom: 135px;
     color: #fff;
-
-    &.card-one {
-      position: relative;
-      z-index: 3;
-      background-image: image_url('thumbs_up.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    &.card-two {
-      position: sticky;
-      bottom: 0;
-      z-index: 2;
-    }
-
-    &.card-three {
-      position: sticky;
-      bottom: 0;
-      z-index: 1;
-      height: 100%;
-      padding-top: 200vh;
-      margin-top: $navbar-height + 125px;
-    }
 
     h1 {
       color: #fff;
