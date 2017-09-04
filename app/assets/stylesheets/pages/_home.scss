@@ -40,10 +40,10 @@
       list-style: none;
     }
 
-    .fa {
+    .social-row .fa {
       padding-left: 10px;
       padding-right: 10px;
-      color: #fff;
+      color: $secondary-color;
 
       &:hover {
         color: $dark-blue-text;
@@ -74,7 +74,11 @@
     height: 100vh;
     text-align: center;
 
-    color: #fff;
+    color: $dark-blue-text;
+
+    .fa {
+      color: $dark-blue-text;
+    }
 
     h1 {
       color: #fff;
