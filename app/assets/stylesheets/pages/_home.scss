@@ -10,40 +10,64 @@
   }
 
   ul {
-    list-style: none;
     padding-left: 0;
+  }
+
+  .font-2x {
+    font-size: 2rem;
+  }
+
+  .font-3x {
+    font-size: 3rem;
+  }
+
+  .card-one {
+    position: relative;
+    z-index: 3;
+    background-image: image_url('thumbs_up.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 135px;
+  }
+
+  .card-two {
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+    padding-top: 75px;
+
+    ul {
+      list-style: none;
+    }
+
+    .fa {
+      padding-left: 10px;
+      padding-right: 10px;
+      color: #fff;
+
+      &:hover {
+        color: $dark-blue-text;
+      }
+    }
+
+    .social-row {
+      padding-top: 50px;
+    }
+  }
+
+  .card-three {
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    padding-top: 25px;
   }
 
   .card {
     width: 100vw;
     height: 100vh;
     text-align: center;
-    padding-top: 135px;
-    padding-bottom: 135px;
+
     color: #fff;
-
-    &.card-one {
-      position: relative;
-      z-index: 3;
-      background-image: image_url('thumbs_up.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    &.card-two {
-      position: sticky;
-      bottom: 0;
-      z-index: 2;
-    }
-
-    &.card-three {
-      position: sticky;
-      bottom: 0;
-      z-index: 1;
-      height: 100%;
-      padding-top: 200vh;
-      margin-top: $navbar-height + 125px;
-    }
 
     h1 {
       color: #fff;
