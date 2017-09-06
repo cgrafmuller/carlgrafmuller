@@ -107,10 +107,14 @@
     }
 
     @media only screen and (max-width: $xs-max-width) {
-      padding-top: $navbar-height + 50px;
-      padding-bottom: $navbar-height + 50px;
+      padding-top: 25px;
+      padding-bottom: 100px;
       position: relative;
       height: auto;
+
+      ul {
+        margin-left: 10px;
+      }
 
       h1,
       h1 strong {
