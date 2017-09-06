@@ -7,8 +7,8 @@ class ApplicationController < ActionController::Base
   helper_method :mobile_device?
 
   def redirect_subdomain
-    return unless request.host == 'www.carlgrafmuller.com'
-    redirect_to 'http://carlgrafmuller.com' + request.fullpath, status: 301
+    return unless request.host == 'www.carlgrafmuller.com' || request.protocol == 'http://'
+    redirect_to 'https://carlgrafmuller.com' + request.fullpath, status: 301
   end
 
   def mobile_device?
