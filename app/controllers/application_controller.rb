@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   helper_method :mobile_device?
 
   def redirect_subdomain
+    return unless Rails.env.production?
     return unless request.host == 'www.carlgrafmuller.com' || request.protocol == 'http://'
     redirect_to 'https://carlgrafmuller.com' + request.fullpath, status: 301
   end
