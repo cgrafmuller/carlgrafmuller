@@ -79,7 +79,12 @@
   .card {
     width: 100vw;
     height: 100vh;
+    margin-bottom: 200px;
     text-align: center;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
 
     color: $dark-blue-text;
 
