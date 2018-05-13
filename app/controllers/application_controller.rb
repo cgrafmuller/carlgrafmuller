@@ -4,7 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :redirect_subdomain
-  helper_method :mobile_device?
 
   def redirect_subdomain
     return unless Rails.env.production?
