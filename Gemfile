@@ -18,7 +18,7 @@ gem 'puma_worker_killer', '~> 0.1.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Bootstrap 3: https://github.com/twbs/bootstrap-sass#a-ruby-on-rails
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
